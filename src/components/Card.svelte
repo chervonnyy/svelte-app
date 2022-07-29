@@ -9,7 +9,7 @@
   const defaultCololr = "#cf5f42";
   const tatooineColor = "#edab00";
 
-  let color = label === "Tatooine" ? tatooineColor : defaultCololr;
+  $: color = label === "Tatooine" ? tatooineColor : defaultCololr;
 </script>
 
 <div class="card" on:click={() => dispatch("selectLabel", label)}>
